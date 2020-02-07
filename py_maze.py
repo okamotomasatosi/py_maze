@@ -230,7 +230,7 @@ def get_block_img(cat_color: int):
 def put_drop_cat(screen, x1_pt: int, y1_pt: int,direction: int):
     # direction  0:上向き    1:右向き    2:下向き    3:左向き
     cat_no= 8 + direction
-    drop_cat_img = get_block_img(cat_color)
+    drop_cat_img = get_block_img(cat_no)
     screen.blit(drop_cat_img, (x1_pt, y1_pt))
 
 
